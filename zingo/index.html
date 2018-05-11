@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <title>Real Estate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <!-- External CSS libraries -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-submenu.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/leaflet.css" type="text/css">
+    <link rel="stylesheet" href="css/map.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="fonts/linearicons/style.css">
+    <link rel="stylesheet" type="text/css"  href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css"  href="css/dropzone.css">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" id="style_sheet" href="css/skins/default.css">
+
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" >
+
+    <!-- Google fonts 
+    <link rel="stylesheet" type="text/css" href="../../fonts.googleapis.com/cssb896.css?family=Open+Sans:400,300,600,700,800%7CPlayfair+Display:400,700%7CRoboto:100,300,400,400i,500,700">
+
+     IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" type="text/css" href="css/ie10-viewport-bug-workaround.css">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script type="text/javascript" src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--<script type="text/javascript" src="js/ie-emulation-modes-warning.js"></script> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+<style>
+    .active,
+    nav ul li a:hover
+{
+background : red;
+}
+    </style>
+
+
+</head>
+<body>
+<div class="page_loader"></div>
+
+<!-- Option Panel -->
+
+<!-- /Option Panel -->
+
+
+
+
+
+<!-- Top header start -->
+<header class="top-header hidden-xs" id="top">
+    <div class="container">
+        <div class="row">
+            
+            <nav>
+                <ul class="" style="text-align: center; height: 60px; text-align: center; padding: 5px">
+                        
+                        <li class="login">
+                                <img src="img/banner/zingo-2.jpg" alt="banner-slider-1" style="margin-left: 1px;">
+                            </li>
+                        <li class="active">
+                                <a href="index.html" style="color: white; padding : 10px"><i>Home</i></a>
+                            </li>
+                    <li class="login">
+                        <a href="room.html" style="color: white; padding : 10px"><i>Rooms</i></a>
+                    </li>
+                    <li>
+                        <a href="promotions.html" style="color: white; padding : 10px"><i>Promotions</i></a>
+                    </li>
+                    <li>
+                        <a href="location.html" style="color: white; padding : 10px"><i>Location</i></a>
+                    </li>
+                    <li>
+                        <a href="gallery.html" style="color: white; padding : 10px"><i>Gallery</i></a>
+                    </li>
+                    <li>
+                        <a href="restaurant.html" style="color: white; padding : 10px"><i>Restaurant</i></a>
+                    </li>
+                    <li>
+                        <a href="spice-store.html" style="color: white; padding : 10px"><i>Coorg Spice Store</i></a>
+                    </li>
+                    <li>
+                        <a href="facilities.html" style="color: white; padding : 10px"><i>Facilities</i></a>
+                    </li>
+                    <li>
+                            <a href="mobile-check-in.html" style="color: white; padding : 10px"><i>Mobile Check IN</i></a>
+                        </li>
+                    <li class="primary moved">
+                        <a href="contact-us.html" style="color: white; padding : 10px">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- Top header end -->
+
+
+
+
+
+
+<!-- Banner start -->
+<div class="banner text-center">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="img/banner/banner-slider-1.jpg" alt="banner-slider-1">
+                <div class="container">
+                    <div class="carousel-caption banner-slider-inner banner-top-align">
+
+
+                        <!--form on Image-->
+                            <div style="position: absolute; width:300px; margin: 0px 0px 0px 800px; background: white; border: 2px solid bisque">
+                                    <form class="form-inline" action="/#">
+                                        <h3 style="color: black">Booking</h3><hr>
+                                        <div class="form-group">
+                                          <label for="email" style="color :black">Check In:</label>
+                                          <input type="date" class="form-control" id="date" name="date">
+                                        </div><br><br>
+                                        <div class="form-group">
+                                          <label for="pwd" style="color :black">Check Out:</label>
+                                          <input type="date" class="form-control" id="date2" name="date2">
+                                        </div><br><br>
+                                       
+                                        <button type="submit" class="btn btn-danger">Book Now</button><br><br>
+                                      </form>
+                                </div>
+
+<!--End form on Image-->
+
+                        <div>
+                             <h1 data-animation="animated fadeInDown delay-05s" style="color: black">Welcome to </h1>
+                            <h1 data-animation="animated fadeInDown delay-05s" style="color: black">Hotel Coffee Bean INN </h1>
+                        </div>
+
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/banner/banner-slider-2.jpg" alt="banner-slider-2">
+                <div class="carousel-caption banner-slider-inner banner-top-align">
+
+
+<!--form on Image-->
+<div style="position: absolute; width:300px; margin: 0px 0px 0px 800px; background: white; border: 2px solid bisque">
+        <form class="form-inline" action="/#">
+            <h3 style="color: black">Booking</h3><hr>
+            <div class="form-group">
+              <label for="email" style="color :black">Check In:</label>
+              <input type="date" class="form-control" id="date" name="date">
+            </div><br><br>
+            <div class="form-group">
+              <label for="pwd" style="color :black">Check Out:</label>
+              <input type="date" class="form-control" id="date2" name="date2">
+            </div><br><br>
+           
+            <button class="btn btn-danger">Book Now</button><br><br>
+          </form>
+    </div>
+
+<!--End form on Image-->
+
+
+                    <div>
+                        <h1 data-animation="animated fadeInDown delay-05s" style="color: black">Welcome to </h1>
+                        <h1 data-animation="animated fadeInDown delay-05s" style="color: black">Hotel Coffee Bean INN </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/banner/banner-slider-2.jpg" alt="banner-slider-2">
+                <div class="carousel-caption banner-slider-inner banner-top-align">
+
+
+<!--form on Image-->
+<div style="position: absolute; width:300px; margin: 0px 0px 0px 800px; background: white; border: 2px solid bisque">
+        <form class="form-inline" action="/#">
+            <h3 style="color: black">Booking</h3><hr>
+            <div class="form-group">
+              <label for="email" style="color :black">Check In:</label>
+              <input type="date" class="form-control" id="date" name="date">
+            </div><br><br>
+            <div class="form-group">
+              <label for="pwd" style="color :black">Check Out:</label>
+              <input type="date" class="form-control" id="date2" name="date2">
+            </div><br><br>
+           
+            <button class="btn btn-danger">Book Now</button><br><br>
+          </form>
+    </div>
+
+<!--End form on Image-->
+
+
+                    <div>
+                        <h1 data-animation="animated fadeInDown delay-05s" style="color: black">Welcome to </h1>
+                            <h1 data-animation="animated fadeInDown delay-05s" style="color: black">Hotel Coffee Bean INN </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="slider-mover-left" aria-hidden="true">
+                <img src="img/chevron-left.png" alt="chevron-left">
+            </span>
+            <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="slider-mover-right" aria-hidden="true">
+                <img src="img/chevron-right.png" alt="chevron-right">
+            </span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+   
+<!-- Banner end -->
+<div class="clearfix"></div>
+
+<!-- Search Section start -->
+
+
+<!-- Recent properties start -->
+<div class="recent-properties">
+    <div class="container">
+        <!-- Main title -->
+        <div>
+            <h1 style="text-align: center">Hotel Coffee Bean INN </h1>
+            <div class="border">
+                <div class="border-inner"></div>
+            </div>
+            <p style="color: grey;">Hotel Coffee Bean INN is a newly built 24 rooms Boutique Hotel located in the heart
+                 of HSR Layout, a one of the poshest areas of Bangalore located in south-east Bengaluru,
+                  India.  Our Hotel is just five minutes away from Koramangala, the most developed 
+                  commercial locality in Bangalore. All top MNCs have their offices located in Koramangala,
+                  making the neighbouring HSR an ideal spot for young professionals to settle down. 
+                  HSR Layout has great shopping facilities, ethnic-wear, modern-wear and South Indian Silk
+                   items and clothes. All are available inside HSR Layout.  </p>
+        </div>
+
+        <div class="row">
+            
+            <div class="col-lg-6">
+                
+                <img src="img/banner/banner-slider-7.jpg" alt="banner-slider-1">
+
+            </div>
+            <div class="col-lg-6">
+                
+                <img src="img/banner/banner-slider-4.jpg" alt="banner-slider-1">
+
+            </div> 
+            
+        </div>
+
+         <br></br>
+
+        <div class="main-title">
+                <h1>Hotel Coffee Bean INN </h1>
+            </div>
+            <div>
+                <p><span>Our Hotel Coffee Bean Inn is Suitable for the Business Travellers and
+                     Tourists visiting to Bangaloreas the area is close to IT Hubs- Electronic City 9 km,
+                      Marathahalli 10 km, Wipro Corporate Office Sarjapur 6 km and Koramangala 4 km.
+                        MG Road and Brigade Road is 6.9 km from our Hotel, Bangalore Palace is 11.3 km
+                         from the property. Kempegowda International Airport is 30.6 km away. </p>
+
+                    <p>We promise the guests a delightful variety of cuisine to savour from during their stay.
+                         The hotel also houses a large and spacious Banquet Hall to conduct your meetings or 
+                         conferences and social gatherings Guest rooms. We offer room with aesthetics,
+                          facilities and comforts.
+                         The rooms are spacious and have all the required amenities making your stay comfortable. </p>
+            </div>
+
+            <br></br>
+            
+
+            <div class="row">
+            
+                    <div class="col-lg-6">
+                        
+                        <img src="img/banner/banner-slider-5.jpg" alt="banner-slider-1">
+        
+                    </div>
+                    <div class="col-lg-6">
+                        
+                        <img src="img/banner/banner-slider-6.jpg" alt="banner-slider-1">
+        
+                    </div>
+                    
+                </div>
+
+
+    </div>
+</div>
+<!-- Recent properties end -->
+
+
+
+<!-- Sub footer start -->
+<div class="sub-footer">
+    <div class="row">
+        <div class="col-lg-3">
+                   <a href="#"> <p style="color: white; margin-left : 20px">Hotel Coffee Bean INN  - Koramangala</p></a>
+        
+        </div>
+        <div class="col-lg-4">
+               <a href="#"> <p style="color: white">20th Main Road, No-1850, 14th Cross Rd, Vanganahalli,
+                    1st Sector,<p style="color: white; text-align: center">HSR Layout, Bengaluru, Karnataka 560102</p> </p></a>
+            
+        </div>
+        <div class="col-lg-2">
+                <a href="#"> <p style="color: white">hello@zingohotels.com</p></a>
+     
+     </div>
+     <div class="col-lg-2">
+            <a href="#"> <p style="color: white"><img src="img/banner/phone-icon.png" alt="banner-slider-1" style="padding:5px">+91 12 3456 7890</p></a>
+ 
+ </div>
+        
+        
+    </div>
+<hr>
+    
+
+ <div class="container">
+     <div class="row">
+         <div class="col-lg-1">
+         </div>
+         <div class="col-lg-10">
+            <span><a style="color: white; padding : 10px" href="index.html">Home</a></span>   
+            <span><a style="color: white; padding : 10px" href="room.html">Rooms</a></span> 
+            <span><a style="color: white; padding : 10px" href="promotions.html">promotions</a></span> 
+            <span><a style="color: white; padding : 10px" href="location.html">Location</a></span> 
+            <span><a style="color: white; padding : 10px" href="gallery.html">Gallery</a></span> 
+            <span><a style="color: white; padding : 10px" href="restaurant.html">Restaurant</a></span> 
+            <span><a style="color: white; padding : 10px" href="spice-store.html">Coorg Spice Store</a></span> 
+            <span><a style="color: white; padding : 10px" href="facilities.html">Facilities</a></span> 
+			<span><a style="color: white; padding : 10px" href="mobile-check-in.html">Mobile Check IN</a></span>
+			<span><a style="color: white; padding : 10px" href="contact-us.html">Contact US</a></span>
+             
+
+            </div>
+            <div class="col-lg-1">
+                </div>
+ </div>
+ </div>
+
+ <hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+        </div>
+        <div class="col-lg-6">
+                <span><img src="img/banner/google-plus.png" alt="banner-slider-1" style="padding:5px"><img src="img/banner/facebook.png" alt="banner-slider-1" style="padding:5px"><img src="img/banner/instagram.jpg" alt="banner-slider-1" style="padding: 5px"><a style="color: white; padding : 10px">Designed & Managed By Zingo Hotels </a></span> 
+            </div>
+            <div class="col-lg-2">
+                </div>
+    </div>
+</div>
+
+</div>
+<!-- Sub footer end -->
+
+<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-submenu.js"></script>
+<script type="text/javascript" src="js/rangeslider.js"></script>
+<script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.scrollUp.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="js/leaflet.js"></script>
+<script type="text/javascript" src="js/leaflet-providers.js"></script>
+<script type="text/javascript" src="js/leaflet.markercluster.js"></script>
+<script type="text/javascript" src="js/dropzone.js"></script>
+<script type="text/javascript" src="js/maps.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script type="text/javascript" src="js/ie10-viewport-bug-workaround.js"></script>
+<!-- Custom javascript -->
+<script type="text/javascript" src="js/ie10-viewport-bug-workaround.js"></script>
+<!--<script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+     ga('create', 'UA-89110077-3', 'auto');
+     ga('send', 'pageview');
+  </script>  -->
+
+</body>
+
+</html>
